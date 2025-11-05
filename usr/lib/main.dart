@@ -1,3 +1,6 @@
+import 'package:couldai_user_app/screens/admin/admin_dashboard_screen.dart';
+import 'package:couldai_user_app/screens/admin/manage_loans_screen.dart';
+import 'package:couldai_user_app/screens/admin/view_applications_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:couldai_user_app/screens/home_screen.dart';
 import 'package:couldai_user_app/screens/loan_list_screen.dart';
@@ -22,6 +25,9 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const HomeScreen(),
         '/loan_list': (context) => const LoanListScreen(),
+        '/admin': (context) => const AdminDashboardScreen(),
+        '/admin/manage_loans': (context) => const ManageLoansScreen(),
+        '/admin/view_applications': (context) => const ViewApplicationsScreen(),
       },
     );
   }

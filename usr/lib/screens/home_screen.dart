@@ -27,6 +27,13 @@ class HomeScreen extends StatelessWidget {
               },
               child: const Text('View Available Loans'),
             ),
+            const SizedBox(height: 10),
+            TextButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/admin');
+              },
+              child: const Text('Go to Admin Dashboard'),
+            ),
           ],
         ),
       ),
